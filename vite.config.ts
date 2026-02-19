@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/brief/", // alt dizin kullanmıyorsan bu satırı sil
+  base: "/loveclick-brief/",
+  build: {
+    outDir: "docs",
+  },
 })
